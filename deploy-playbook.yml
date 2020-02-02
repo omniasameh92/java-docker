@@ -15,7 +15,7 @@
 
    - name: Running the container
      docker_container:
-       image: tomcat
+       image: tomcat:9.0
        name: tomcat
        state: started
 
