@@ -7,11 +7,8 @@
   #  package_name: devopsarea-1.0.war
 
   tasks:
-   - name: Install pip
-     apt: name=python-pip state=present
-
    - name: install docker-py package
-     pip: name=docker-py
+     pip: name=docker
 
    - name: Running the container
      docker_container:
