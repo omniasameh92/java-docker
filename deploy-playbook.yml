@@ -17,7 +17,7 @@
      docker_container:
        image: tomcat:latest
        name: tomcat
-       state: running
+       state: started
 
    - name: Configure Tomcat users
      copy:
