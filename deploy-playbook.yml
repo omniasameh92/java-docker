@@ -15,8 +15,9 @@
 
    - name: Running the container
      docker_container:
+       name: mytomcat
        image: tomcat:9.0
-       name: tomcat
+       state: present
 
    - name: Configure Tomcat users
      copy:
@@ -43,5 +44,5 @@
    - name: deploy the generated package to tomcat
      copy:
        src: ./target/devopsarea-1.0.war
-       dest: /var/lib/tomcat8/webapps/
+       dest: /var/lib/tomcat*/webapps/
        mode: 0777                                                                                                                                                                              
