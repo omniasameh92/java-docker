@@ -15,7 +15,7 @@
 
    - name: Running the container
      docker_container:
-       image: tomcat:latest
+       image: tomcat
        name: tomcat
        state: started
 
